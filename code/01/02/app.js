@@ -71,7 +71,7 @@ const existingPassword = 'admin123';*/
 
 
 //calculator 
-const num1 = Number(prompt("Sisesta esimene arv:"));
+/*const num1 = Number(prompt("Sisesta esimene arv:"));
 const num2 = Number(prompt("Sisesta teine arv:"));
 const operation = prompt("Sisesta tehe (+, -, *, /):");
 
@@ -94,4 +94,23 @@ if (operation === "+") {
         // Show result if calculation was successful
     if (result !== undefined) {
       alert("Tulemus on: " + result);
+    }*/
+
+
+// tsuklid 
+
+//const count = Number(prompt('sisesta kordurste arv'));
+
+
+//koordustabel 
+const count = 11;
+
+/*for (let index = 1; index < count ; index + 1) {
+    console.log ('1 *', index, '=', 1 * index); }*/
+
+
+for (let i=1; i < count; i = i + 1) {
+    for (let j = 1 ; j < count; j = j + 1) {
+        console.log(i + ' * ' + j + ' = ' + i * j);
     }
+}
