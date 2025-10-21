@@ -23,7 +23,15 @@ const width = Number(prompt("Sisestage ristkuliku laius:"));
 const area = length * width;
 alert("Ristküliku pindala on: " + area);*/
 
-const celsium  = Number (prompt('Sisestage Celsius'));
-const fahrenheit = celsium * 9/5+32;
-alert (celsium + " Celsius is" + fahrenheit + "Fahrenheit degrees");
 
+//temperaturi check 
+/*const celsium  = Number (prompt('Sisestage Celsiuse kraadides'));
+const fahrenheit = celsium * 9/5+32;
+alert (celsium + " Celsius is"  + fahrenheit + "Fahrenheit degrees");*/
+
+// Tingimus laused 
+const color = prompt ('Mis varvi on foori tuli?');
+
+if (color === 'roheline') {
+    alert ('void ule tee minna');
+} else {alert ('Pead veel ootama');}
