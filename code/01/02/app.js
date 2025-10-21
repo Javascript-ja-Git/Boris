@@ -30,8 +30,68 @@ const fahrenheit = celsium * 9/5+32;
 alert (celsium + " Celsius is"  + fahrenheit + "Fahrenheit degrees");*/
 
 // Tingimus laused 
-const color = prompt ('Mis varvi on foori tuli?');
+/*const color = prompt ('Mis varvi on foori tuli?');*/
 
-if (color === 'roheline') {
+/*if (color === 'roheline') {
     alert ('void ule tee minna');
-} else {alert ('Pead veel ootama');}
+} else {alert ('Pead veel ootama');}*/
+
+
+/*if (color == 'roheline') {alert('Void edasi soita');
+
+}
+else if (color == 'kollane') { alert ('Pead veel tukk aega ootama');
+
+}
+else if (color == 'punane') {alert('Oota veel pisut');
+
+}
+else { alert ('Sellist varvi ei tohiks olla');}*/
+
+//parroli cood 
+
+/*const pasword = prompt ( 'Palun sisesta parooli' )
+const existingPassword = 'admin123';*/
+
+/*if (password === existingPassword) {
+    alert ('Vale parool');
+} else { 
+    alert ('tere tulemast');
+}*/
+
+
+
+/*const age = Number(prompt("Sisesta oma vanus:"));
+
+    if (age >= 18) {
+      alert("Oled täisealine!");
+    } else {
+      alert("Oled alaealine!");
+    }*/
+
+
+//calculator 
+const num1 = Number(prompt("Sisesta esimene arv:"));
+const num2 = Number(prompt("Sisesta teine arv:"));
+const operation = prompt("Sisesta tehe (+, -, *, /):");
+
+if (operation === "+") {
+      alert = num1 + num2;
+    } else if (operation === "-") {
+      alert = num1 - num2;
+    } else if (operation === "*") {
+      alert = num1 * num2;
+    } else if (operation === "/") {
+      if (num2 === 0) {
+        alert("Nulliga ei saa jagada!");
+      } else {
+        alert = num1 / num2;
+      }
+    } else {
+      alert("Tundmatu tehe!");
+    }
+
+        // Show result if calculation was successful
+    if (result !== undefined) {
+      alert("Tulemus on: " + result);
+    }
