@@ -103,14 +103,27 @@ if (operation === "+") {
 
 
 //koordustabel 
-const count = 11;
+/*const count = 11;
 
 /*for (let index = 1; index < count ; index + 1) {
     console.log ('1 *', index, '=', 1 * index); }*/
 
 
-for (let i=1; i < count; i = i + 1) {
+/*for (let i=1; i < count; i = i + 1) {
     for (let j = 1 ; j < count; j = j + 1) {
         console.log(i + ' * ' + j + ' = ' + i * j);
     }
+}*/
+
+/*const password = '1234';
+
+
+if (password) {
+  alert ('Something');
+} else {
+  alert ('not something');
+}*/
+
+for (let i=1; i < 6; i++) {
+  console.log (i);
 }
