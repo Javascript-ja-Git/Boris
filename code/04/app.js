@@ -83,7 +83,7 @@ console.log(k); */
 const weekdays = ["esmaspaev","teisipaev","kolmapaev","neljapaev","reede","laupaev","puhapaev"];
 weekdays = []; */
 
-// ------------⬇️⬇️⬇️⬇️⬇️---------------Match object 
+// #region------------⬇️⬇️⬇️⬇️⬇️---------------Match object 
 
 /* //console.log(Math.PI);
 const sales = [10, 5, 15, 20];
@@ -92,3 +92,21 @@ console.log(Math.random()); // juhuslik arv 0 ja 1 vahel
 
 console.log = Math.floor(Math.random() * 4) - 1; // juhuslik täisarv 0–2 vahel
 //console.log(sales[randomNumber]); */
+//#endregion
+
+// ⬇️⬇️⬇️⬇️⬇️---------------------------takes one and counts back 1 
+//#region 
+function dice() {
+  const randomNumber = Math.ceil(Math.random() * 6);
+  return randomNumber;
+}
+
+/* const maNumber = Number (prompt('Palun sisesta maksimaalne juhuarv'));
+console.log (dice(max.Number)); */
+
+const names = ['Jaan', 'Juta', 'Kalle', 'Malle', 'Tiina', 'Juhan'];
+const randomNumber = dice(names.length);
+console.log(names[randomNumber - 1]);
+
+//#endregion
+// ------------------------⬆️⬆️⬆️⬆️⬆️
