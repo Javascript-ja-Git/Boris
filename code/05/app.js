@@ -104,7 +104,7 @@ const (allowedCarNumber.includes(carNumber)) {
 
 
     //my version 
-function checkEmail(email) {
+/* function checkEmail(email) {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (emailPattern.test(email)) {
@@ -135,4 +135,110 @@ function checkEmail (email) {
 }
 
 const email = prompt ('sisesta ome email');
-console.log (checkifemail(email));
+console.log (checkifemail(email)); */
+
+// -------2025-11-11 16:13:20 -------------------------
+/* 
+const number [1, 4, 5, 7, 8,2,9];
+
+for(let i = 0; i < number.lenght; i++) {
+    if (number [i]) % 2 == 0 {
+        console.log (number[i] +  ' on paarisarv');
+    } 
+    else {
+        console.log (number[i] + 'on paarity arv');
+    }
+} */
+
+// -------2025-11-11 16:23:50 -----------kusib nime ja iga teine taht on suur 
+
+/* const name = prompt("Sisesta oma nimi:"); */
+/* let result = "";
+
+for (let i = 0; i < name.length; i++) {
+  if (i % 2 === 0) {
+    result += name[i].toUpperCase(); // paaris indeks → suur täht
+  } else {
+    result += name[i].toLowerCase(); // paaritu indeks → väike täht
+  }
+} */
+
+/* for(let i = 0; i < firstName.lenght; i++){
+    if (i % 2 === 0){
+        console.log ( firstName[i]).toLowerCase();
+    } else {
+
+        console.log(firstName[i].toUpperCase())
+
+    }
+}
+ */
+// ulevas asi tehtud nagu functsion
+
+/* function capitalizeEveryOtherLetter(word) {
+  for (let i = 0; i < word.length; i++) {
+    if (i % 2 === 0) {
+      console.log(word[i].toLowerCase());
+    } else {
+      console.log(word[i].toUpperCase());
+    }
+  }
+}
+const firstName = prompt ('sisesta oma nimi')
+
+capitalizeEveryOtherLetter(firstName); */
+
+// -------2025-11-11 16:45:40 -----📢 teeb iga random tahe suur 
+/* 
+function capitalizeRandom(word) {
+  let result = "";
+
+  for (let i = 0; i < word.length; i++) {
+    // Math.random() annab arvu 0–1 vahel
+    if (Math.random() < 0.5) {
+      result += word[i].toLowerCase(); // umbes pool ajast väike
+    } else {
+      result += word[i].toUpperCase(); // ja teine pool suur
+    }
+  }
+
+  return result;
+}
+
+// Näide kasutamisest:
+const name = prompt("Sisesta oma nimi:");
+console.log(capitalizeRandom(name)); */
+
+// -------2025-11-11 16:52:58 -----📢----naitab kui palju koorda 
+
+/* function randomNumber(){
+    const randomNumber = (Math.random() * 6 );// arvud 0-5
+    return randomNumber;
+
+    const counter = [0,0,0,0,0,0];}
+for (let i = 0; i < 10000; i++){
+    randomNumber();
+}
+
+console.log(randomNumber()); */
+
+
+function randomNumber() {
+  // Teeme täisarvud 0–5
+  const number = Math.floor(Math.random() * 6);
+  return number;
+}
+
+// Loendur iga arvu jaoks
+const counts = [0, 0, 0, 0, 0, 0];
+
+// Jooksutame 10 000 korda
+for (let i = 0; i < 1000000000; i++) {
+  const n = randomNumber();  // saa juhuslik arv
+  counts[n]++;               // suurenda selle arvu loendurit
+}
+
+// Kuvame tulemused
+for (let i = 0; i < counts.length; i++) {
+  console.log(i + " tuli " + counts[i] + " korda");
+};
