@@ -95,18 +95,37 @@ console.log = Math.floor(Math.random() * 4) - 1; // juhuslik täisarv 0–2 vahe
 //#endregion
 
 // ⬇️⬇️⬇️⬇️⬇️---------------------------takes one and counts back 1 
-//#region 
+/* //#region 
 function dice() {
   const randomNumber = Math.ceil(Math.random() * 6);
   return randomNumber;
-}
+} */
 
 /* const maNumber = Number (prompt('Palun sisesta maksimaalne juhuarv'));
 console.log (dice(max.Number)); */
 
-const names = ['Jaan', 'Juta', 'Kalle', 'Malle', 'Tiina', 'Juhan'];
+/* const names = ['Jaan', 'Juta', 'Kalle', 'Malle', 'Tiina', 'Juhan'];
 const randomNumber = dice(names.length);
-console.log(names[randomNumber - 1]);
+console.log(names[randomNumber - 1]); */
 
 //#endregion
 // ------------------------⬆️⬆️⬆️⬆️⬆️
+// ---------------------------
+
+/* const names = ['Mati', 'Kati', 'Kalle', 'Maalle'];
+for (let i = 0; i < names.length; i++) {
+  console.log (names [i]);
+} */
+
+// -------2025-11-11 10:53:17 -------------------------
+
+function logElements(array){
+  for( let i = 0 ; i < array.length; i ++) {
+    console.log(array[i]);
+  }}
+
+  const names = ['Jaan', 'Juta', 'Kalle', 'Malle', 'Tiina', 'Juhan'];
+  const Number = [1, 2, 3, 5, 7, 9, 0];
+
+  logElements(names);
+  logElements(Number);
