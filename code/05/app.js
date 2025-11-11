@@ -63,18 +63,76 @@ if (username) {
 
 // -------2025-11-11 12:55:20 -------------------------
 
-function kontrolliArvu(number) {
-  if (number >= 1 && number <= 100) {
-    return "Arv on sobivas vahemikus (1–100).";
+/* function kontrolliArvu(number, min,max) {
+  if (number >= min && number <= max) {
+    return true;
   } else {
-    return "Arv ei ole vahemikus 1–100.";
+    return false;
   }
 }
 
 // küsime kasutajalt sisendi
-const input = prompt("Sisesta üks arv 1 ja 100 vahel:");
-const number = Number(input); // muudame sisendi arvuks
+const number = Number(prompt('sisestage arv'))
 
-// kutsume funktsiooni ja näitame tulemust
-const tulemus = kontrolliArvu(number);
-alert(tulemus);
+console.log(checkifRange(number,1, 100))
+console.log(checkifRange(number, 20, 30)) */
+
+/* const firstName = 'Tina';
+console.log  */
+
+// -------2025-11-11 15:07:37 -------------------------
+//tegevused stringidega 
+/* const carNumber = prompt ('sisesta ome auto number'); */
+/* alert(carNumber.toUpperCase());
+alert(carNumber); */
+
+/* if(carNumber.includes('EKL')) {
+    alert('laabapaas lubatud');
+
+}else{
+    alert ('labipaas keelatud');
+}
+ */
+
+/* const allowedCarNumber = ['123EKL', '234EKL', '123ABC', '234bcd'];
+const (allowedCarNumber.includes(carNumber)) {
+    alert ('Laabipas lubatud');
+
+} else {
+    alert('Labipaas keelatud');
+} */
+
+
+    //my version 
+function checkEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailPattern.test(email)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// küsi kasutajalt e-mail
+const userEmail = prompt("Sisesta oma e-mail:");
+
+// kontrolli tulemust
+if (checkEmail(userEmail)) {
+  alert("E-mail on kehtiv ✅");
+} else {
+  alert("E-mail ei ole kehtiv ❌");
+}
+
+// opetaja 
+
+function checkEmail (email) {
+    if (! email.includes('@') || !email.includes('.')) {
+        return false;
+
+    }
+    return true;
+}
+
+const email = prompt ('sisesta ome email');
+console.log (checkifemail(email));
