@@ -217,7 +217,7 @@ console.log("Keskmine lehekülgede arv:", keskmine); */
 
     // ➡️ loetud raamatud arv kokku  ⬇️
 
-    let summa = 0;
+  /*   let summa = 0;
 
     for (let i = 0; i < books.length; i ++) {
         if(books[i].loetud === true) {
@@ -225,4 +225,45 @@ console.log("Keskmine lehekülgede arv:", keskmine); */
         }
     }
 
-    console.log("Loetud raamatute lehekülgi kokku:", summa);
+    console.log("Loetud raamatute lehekülgi kokku:", summa); */
+
+    // -------2025-11-25 14:28:57 -----📢-------
+
+/*     function ChangeTitle () {
+        console.log ('ChangeTitle');
+    } */
+
+/*         function ChangeTitle () {
+document.getElementById('title').innerHTML = 'Uuus pealkiri';
+        } */
+
+// ➡️ teine pealkir ⬇️
+
+/* function ChangeTitle() {
+    console.log (document.gete)
+    document.getElementById("title1").innerHTML = "Uus esimene pealkiri";
+    document.getElementById("title2").innerHTML = "Uus teine pealkiri";
+} */
+// ➡️  ⬇️
+/* function changeMainTitle() {
+    const text = document.getElementById('text-for-title').value;
+    document.getElementById("title1").innerHTML = text;
+}
+
+function changeSubTitle() {
+    document.getElementById('title2').innerHTML = 'Veel uuem pealkiri';
+} */
+
+/* function changeMainTitle() {
+    const input = document.getElementById('text-for-title').value;
+
+    if (input.trim() === "") {
+        document.getElementById("title1").innerHTML = "Default pealkiri";
+    } else {
+        document.getElementById("title1").innerHTML = input;
+    }
+}
+
+function changeSubTitle() {
+    document.getElementById('title2').innerHTML = "Veel uuem pealkiri";
+} */
