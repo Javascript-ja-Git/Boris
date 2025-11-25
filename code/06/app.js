@@ -267,3 +267,69 @@ function changeSubTitle() {
 function changeSubTitle() {
     document.getElementById('title2').innerHTML = "Veel uuem pealkiri";
 } */
+
+/* function changeTitle1() {
+    const text = document.getElementById("new-title-text").value;
+    const color = document.getElementById("color-picker").value;
+
+    document.getElementById("title1").innerHTML = 
+        text.trim() === "" ? "Default pealkiri" : text;
+
+    document.getElementById("title1").style.color = color;
+}
+
+function changeTitle2() {
+    const text = document.getElementById("new-title-text").value;
+    const color = document.getElementById("color-picker").value;
+
+    document.getElementById("title2").innerHTML =
+        text.trim() === "" ? "Default pealkiri" : text;
+
+    document.getElementById("title2").style.color = color;
+} */
+
+    // ➡️ change when typing  ⬇️
+
+    function changeTitle1() {
+    const text = document.getElementById("new-title-text").value;
+    const color = document.getElementById("color-picker").value;
+
+    document.getElementById("title1").innerHTML =
+        text.trim() === "" ? "Default pealkiri" : text;
+
+    document.getElementById("title1").style.color = color;
+}
+
+function changeTitle2() {
+    const text = document.getElementById("new-title-text").value;
+    const color = document.getElementById("color-picker").value;
+
+    document.getElementById("title2").innerHTML =
+        text.trim() === "" ? "Default pealkiri" : text;
+
+    document.getElementById("title2").style.color = color;
+}
+
+// ⭐ UUS funktsioon: live muutmine
+function liveUpdateTitle() {
+    const text = document.getElementById("live-title-text").value;
+
+    // Muudame KOHE pealkirja 1
+    document.getElementById("title1").innerHTML =
+        text.trim() === "" ? "Esimene pealkiri" : text;
+}
+
+function login() {
+    const pin = document.getElementById('pin').value;
+    console.log(pin);
+
+    if (pin === '1234') {
+        document.getElementById('status').innerHTML = 'Oled sisse logitud';
+        document.getElementById('status').style.color = 'green';
+        console.log('You have entered');
+    } else {
+        document.getElementById('status').innerHTML = 'Vale PIN';
+        document.getElementById('status').style.color = 'red';
+        console.log('Ligipääs puudub');
+    }
+}

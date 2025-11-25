@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pealkirjade muutmine</title>
 </head>
 <body>
-    <h1 id="title1" style="color: crimson;">Kuues Loeng</h1>
+
+    <h1 id="title1">Esimene pealkiri</h1>
     <h2 id="title2">Teine pealkiri</h2>
 
-    <input type="text" id="text-for-title">
+    <!-- Kast, kuhu kirjutad uue pealkirja (muutub nupu abil) -->
+    <input type="text" id="new-title-text" placeholder="Sisesta uus pealkiri">
 
-    <button onclick="changeMainTitle()">Muuda esimene pealkiri</button>
-    <button onclick="changeSubTitle()">Muuda teine pealkiri</button>
+    <br><br>
+
+    <!-- UUS KAST: kui kirjutad siia, pealkiri muutub KOHE -->
+    <input type="text" id="live-title-text" placeholder="Kirjuta ja pealkiri muutub kohe" oninput="liveUpdateTitle()">
+
+    <br><br>
+
+    <!-- Värvivalija -->
+    <input type="color" id="color-picker">
+
+    <br><br>
+
+    <!-- Nupud -->
+    <button onclick="changeTitle1()">Muuda esimene pealkiri</button>
+    <button onclick="changeTitle2()">Muuda teine pealkiri</button>
+
+   <input type="password" id="pin" placeholder="Sisesta PIN">
+<button onclick="login()">Logi sisse</button>
+
+<h3 id="status"></h3>
 
     <script src="app.js"></script>
 </body>
